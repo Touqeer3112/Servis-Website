@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.Header{
+    width: 100%;
+    height: 750px;
+    background-image: url(https://www.servis.pk/cdn/shop/files/ndure-banner-dimensions.png?v=1721826383);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Sticky{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.first-line{
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+    position: relative;
+}
+.first-line img{
+    margin-left: 20px;
+}
+.first-line span{
+    margin-top: 45px;
+    margin-right: 45px;
+}
+.first-line span b{
+    font-family:"Poppins", sans-serif; ;
+    font-weight: 300;
+}
+.first-line span input{
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    border-bottom-color: black;
+    text-align: right;
+}
+
+.first-line span i{
+    padding-left: 15px;
+    font-size: 20px;
+}
+.navbar{
+    margin: 40px 12px;
+}
+.navbar ul li{
+    margin-left: 25px;
+    display: inline-block;
+}
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+.navbar ul li a::after{
+       content:'';
+       position: absolute;
+       width: 0;
+       left: 0;
+       background-color: rgb(209,98,47);
+       height: 2px;
+       transition: 0.5s;
+       bottom: 0;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.fullsize-image1 video{
+    margin-top: 5px;
+    width: 100%;
+}
+.footer{
+    padding-top: 250px;
+    width: 100%;
+}
+.toper{
+    padding: 20px;
+    text-align: center;
+}
+.toper h2{
+    letter-spacing: 1px;
+    font-weight: 400;
+   font-family: "Poppins", sans-serif;
+   font-size: 18px;
+}
+.toper input{
+    font-size: 15px;
+    border-color: transparent;
+    border-bottom-color: black;
+    outline: none;
+    margin-top: 20px;
+}
+.flexbox4{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    font-family:"Poppins", sans-serif ;
+    font-weight: 300;
+    justify-content: space-around;
+}
+.one,.two,.three,.four,h4,p{
+    padding: 15px;
+}
+@media(min-width:300px)and(max-width:600px){
+    .header{
+        width: 200%;
+        height:400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image:url(https://www.servis.pk/cdn/shop/files/ndure-banner-dimensions.png?v=1721826383);
+    }
+    .first-line img{
+        width: 200px;
+        height: 60px;
+        top: 5px;
+        position: relative;
+    }
+
+    .sticky{
+        width: 100%;
+        position: fixed;
+        top: 40px;
+    }
+    .first-line{
+        display: flex;
+        justify-content: center;
+        top: 2px;
+        position: relative;
+    }
+     .first-line span{
+        display: none;
+     }
+     .navbar{
+        text-align: center;
+        margin: 10px 0px 0px 35px;
+     }
+     .navbar ul li a{
+         color: #fff;
+         right: 30px;
+         text-decoration: none;
+         font-family:"Poppins", sans-serif;
+         font-weight: 500;
+         margin-top: 20px;
+         position: relative;
+         font-size: 15px;
+     }
+     .navbar ul li{
+        margin-left: 15px;
+        display: inline-block;
+     }
+     .fullsize-image1 video{
+        margin-top: 5px;
+        width: 200%;
+     }
+     .fullsize-image2 img{
+        height: 500px;
+        width: 200%;
+     }
+     .footer{
+        width: 200%;
+        border: 1px solid black;
+        padding-top: 250px;
+     }
+}
